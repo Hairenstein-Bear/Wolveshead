@@ -1,0 +1,267 @@
+/* *{
+  border: solid blue 1px;
+} */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* overflow-x: hidden; */
+}
+#container{
+    /* background: rgb(131,27,20); */
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height:2000px;
+    margin: auto;
+
+}
+#upperNavBar
+{
+    background-color: #343B44ff;
+    position: sticky;
+    top:0px;
+    position: -webkit-sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    height: 190px;
+    width: 4000px;
+    background: radial-gradient(100% 70% ellipse at center 100%, #ff000000 60%, #831B14ff 100%);
+    border-bottom-left-radius: -80%;
+}
+#navLeft{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -15em;
+  top: -3em;
+}
+#navLeft img{
+  height: 5em;
+}
+
+#navRight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left:200px;
+  top:-4em;
+}
+#navRight img{
+  height: 4.3em;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -100px;
+    padding: 50px;
+    font-size: 20px;
+    height: 80px;
+    z-index: 10;
+  
+}
+#sidebar{
+  background: rgb(131,27,20);
+  background: radial-gradient(circle, rgba(131,27,20,0) 78%, #343B44ff 89%); 
+    z-index: 1;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    top:-50px;
+}
+#address {
+    position: relative;
+    display: inline;
+    float: right;
+    margin-right: 150px;
+    top:-330px;
+}
+#hero{
+    z-index: 0;
+    position: absolute;
+    top:50px;
+}
+#hero image{
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+  #heroTransition{
+    background: radial-gradient(150% 50% ellipse at center 0%, #ff000000 20%, #831B14ff 100%);
+    position: absolute;
+    left: 0px;
+    width: 2560px;
+    top:780px;
+    height:20px;
+  }
+#info  {
+    display: inline;
+    background: linear-gradient(#831B14ff, #831B14ff 10%);
+    position: absolute;
+    left: 0px;
+    width: 2560px;
+    top:800px;
+    height:250px;
+  }
+#info p{
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+#info h1 {
+  font-size: 3em;
+  text-decoration: underline;
+}
+#order {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: rgb(147,105,83);
+  background: linear-gradient(90deg, rgba(147,105,83,1) 0%, rgba(212,172,152,1) 12%, rgba(147,105,83,1) 25%, rgba(176,134,113,1) 37%, rgba(212,172,152,1) 50%, rgba(176,134,113,1) 63%, rgba(147,105,83,1) 75%, rgba(212,172,152,1) 88%, rgba(147,105,83,1) 100%); 
+  height: 8rem;
+  width: 25rem;
+  top:-200px;
+  left: 0px;
+  border-radius: 35%;
+  border: rgb(147,105,83) 5px solid;
+  box-shadow: 0 0 10px 5px black;
+
+}
+#order:hover{
+  box-shadow: 0 0;
+  transform: scale(.9);
+}
+#order p{
+  position: relative;
+  display: flex;
+  align-items: center;
+  top:20px;
+}
+  li{
+    color: white;
+  }
+#infoTransition{
+  background: radial-gradient(150% 50% ellipse at center 0%, #343B44ff 20%, #A3B7C4ff 100%);
+  position: absolute;
+  left: 0px;
+  width: 2560px;
+  top: 65em;
+  height:20px;
+  }
+#about{
+  background-color: #A3B7C4ff;
+  position: absolute;
+  top:1060px;
+  left: 0px;
+  height: 30rem;
+  width: 100%;
+}
+#about img{
+  width:50em;
+  position: relative;
+  left: 5em;
+  top: -2em;
+  z-index: 1;
+}
+
+#aboutTxt{
+  font-size: 1.6em;
+  position: relative;
+  top: 3em;
+  float:right;
+  width:50em;
+  left: -7em;
+}
+#aboutTxt p{
+  display: inline;
+  left:-100px;
+}
+#review{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("nachos.JPG");
+  background-repeat: no-repeat;
+  background-size: 160em 60em;
+  height:40em;
+  position: relative;
+  top:-6em;
+  left:-0em;
+  width: 160em;
+  /* z-index: -1; */
+  border-top: solid #343B44ff 20px;
+  border-bottom: solid #343B44ff 20px;
+}
+#review div{
+  background-color: rgb(168, 111, 69);
+  font-size: 2.5em;
+  margin-left: -.05em;
+  margin-right: -.05em;
+  width: 13em;
+  top: 0em;
+  height: 12em;
+  position: relative;
+  left:0em;
+  border:5px solid rgb(119, 86, 68);
+  z-index: 2;
+}
+#review :nth-child(even){
+  height: 11em;
+}
+#review :nth-child(odd){
+  height: 14em;
+}
+#review div:hover{
+  height: 16em;
+  background-color: bisque;
+  box-shadow: 0px 0px 5px 5px;
+  z-index: 3;
+}
+#events{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -2em;
+  height:13em;
+  background-color:darkgray;
+  border-bottom: solid black 20px;
+  font-size: 3em;
+  margin-bottom: 0em;
+}
+#events p{
+  top:2em;
+}
+#findUs{
+  position: relative;
+  top:-6em;
+  height:30em;
+  background-color: #343B44ff;
+  border-bottom: solid black 20px;
+
+}
