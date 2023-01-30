@@ -1,78 +1,187 @@
 <!DOCTYPE html>
-<html>
-<head lang ="en">
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="jquery-gallery.css" type="text/css" rel="stylesheet">
 	
-	<Title>Wolveshead Pizza and Wings</Title>
+    <Title>Wolveshead Pizza and Wings</Title>
 
 </head>
-<body>
+<body onload="myfunction()">
 <div id="container">
-    <a id="home"><div id="upperNavBar" class="sticky"></a>
-        <div id="navLeft">
-        <a href="#home" style="position: relative; left: -2em; top:-15px;font-size: 3em;">Home</a>
-        <a href="#find" style="position: relative;top:-15px;font-size: 3em;">Find Us</a>
-        <a href="https://www.facebook.com/WolvesHead/"><img src="facebookLogo.png"></a>
 
-        </div>
-        <img src="wolvesheadLogo.png" style="position: absolute; top:0px;">
-        <div id="navRight">
-        <a href="https://www.facebook.com/WolvesHead/"><img src="instagramLogo.png"></a>
-        <a href="#aboutLink" style="position: relative; left: 100px; font-size:3em;">About</a>
-        <a href="#event" style="position:relative; left: 150px; font-size:3em;">Events</a>
-        </div>
-    </div>
-    <!-- <div id="sidebar"></div> -->
-    <div id="hero"><img src="pizza.jpg" style="position:absolute; left:-80em; width:160em; height: 750px; z-index: 4; "><img src="taps.jpg" id="top" style="position:absolute; left:-80em; width:160em; height: 750px; z-index: 4; "></div>
-    <div id="heroTransition"></div>
-    <div id="info">
-        <a id=aboutLink></a>
-        <h1 style="margin-left:10rem; width:fit-content">Hours of Operation:</h2>
-            <p style="margin-left:10rem; width:fit-content">Sunday:   11am-9pm</p>
-            <p style="margin-left:10rem; width:fit-content">Mon-Thur: 11am-10pm</p>
-            <p style="margin-left:10rem; width:fit-content">Fri-Sat:  11am-11pm</p>
-            
-            <a href="http://order.wolvesheadpizza.com" style = "display: flex; align-items: center; justify-content: center; font-size: 30px; color: white;"><div id="order"><p>Order Now</p></div></a>
-            <div id="address">
-                <ul>
-                    <li style="list-style-type:none;"><p>Wolveshead Pizza & Wings</p><br></li>
-                    <li style="list-style-type:none;"><p>Lakewood Ranch, FL 34211</p><br></li>
-                    <li style="list-style-type:none;"><p>1837 Lakewood Ranch Blvd</p><br></li>
-                    <li style="list-style-type:none;"><p style = "font-size: 30px;">(941)251-4028</p></li>
-                </ul>
-                
-        </div>
-    
-    </div><div id="infoTransition"></div>
 
-        <div id="about"><img src="john.jpg"><div id="aboutTxt">
-            <p>Wolveshead was opened in March of 2015 by John and Jackie Breiner.  Thanks to support from the local community, and a wonderful staff, Wolveshead became a staple of Lakewood Ranch in no time.<br><br>Now we continue the formula that made us successful: Great food, Great Atmosphere, and Fair prices. Our menu consists of delicious, made from scratch items including signature pizza and wings. With 22 beers on tap, as well as a large wine, seltzer and bottled beer selection we have something for everyone.<br><br> We have MLB Extra Innings, NFL Sunday ticket, and all Tampa Bay Lightning games displayed on our 15 T.Vs. Come find out why we are a regular part of so many peoples week, and JOIN THE PACK!
-</p></div>
-        <div style="background-color: rgb(73, 53, 43); height: 2em; position:relative; left: 0px; top:15em; width: 160em; z-index:1"></div>
-        <div id="review">
+    <div style="height: fit-content; width:100vw;">
+        <a id="home"></a>
+        <div id="upperNavBar" class="sticky">
+            <div id="navWrap">
+                <div id="navLeft">
+                    <a href="#home" class="navLink" id="navLink">Home</a>
+                    <a href="#findUs" class="navLink">Find Us</a>
+                    <a href="menu.html" class="navLink">Menu</a>
+                    <a href="https://www.facebook.com/WolvesHead/"><img src="facebookLogo.png" alt="Facebook logo"></a>
+                    
+                </div>
+
+                <div style="position:relative; display: flex;">
+                    <a href="tel:+19412514028" id="phNum">(941)-251-4028</a>
+                </div>
+
+
+                <div id="navRight">
+                    <a href="https://www.instagram.com/wolvesheadpizzaandwings/"><img src="instagramLogo.png" alt="Instagram logo"></a>
+                    <a href="#aboutLink" class="navLink">About</a>
+                    <a href="#specialLink" class="navLink">Specials</a>
+                    <a href="contact.html" class="navLink">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div id="logoWrap">
+        <div id="cover">
+            <img src="wolvesheadLogo.png" alt="Wolveshead Pizza and Wings Logo">
+        </div>
+        </div>
+        <div id="hero">
+            <ul class="gallery-slideshow">
+                <li><img src="pizza.jpg" style = "width: 70%; height: 15em;" alt="Pepperoni Pizza"></li>
+                <li><img src="taps.JPG" style = "width: 100%; height: 20em;" alt="Wall of Beer taps-Domestic/Craft/Import"></li>
+                <li><img src="buffaloChicken.JPG" style = "width: 100%; height: 20em;" alt="Buffalo Chicken Sandwich with French Fries"></li>
+                <li><img src="beefTaco.JPG" style = "width: 100%; height: 5em;" alt="3 Beef Tacos served with chips and salsa"></li>
+                <li><img src="beer.JPG" style = "width: 100%; height: 5em; top:-2em;" alt ="two people saying cheers with beer glasses"></li>
+                <li><img src="wings.jpg" style = "width: 100%; height: 20em;" alt ="Chicken Wings parmesan garlic and Wolves Way"></li>
+              </ul>
+        </div>
+        <div id="info">
+            <div id="infoWrap">
+                <div id="hours">
+                    <h1>Hours of Operation:</h1>
+                    <p><b>Sunday:   11am-9pm<br>
+                Mon-Thur: 11am-10pm<br>
+                Fri-Sat:  11am-11pm</b></p>
+            </div>
             
-            <div id="one"><i>"Wow. I grew up in NJ. This pizza brought back unbelievable and great memories of a pizzeria very close to home. You cannot find great pizza like this anywhere in FL. You will not be disappointed! Great job Wolves Head!!"</i><br><br> -Gregory Joseph</div>
-            <div id="two"><i>"The service was fast, friendly and our glasses were always full.  Everything was amazing! They have a great menu, something for everyone."</i><br><br> -Danette Bertulli</div>
-            <div id="three"><i>"Wolves Head has become one of our new favorite spots. We have been searching for a place with a great atmosphere and good wings. The wings were amazing. The service was wonderful. Thank you for such an awesome experience."</i><br><br>-Tairyn Soczek</div>
-            <div id="four"><i>This place is amazing, from their friendly staff, to their accommodating owner and all the way to their made from scratch meals every bit of this place is gold!</i><br><br>-Christina Martinez</div>
-            
-            <a id="event"></a>
+            <div id="order">
+                    <a href="http://order.wolvesheadpizza.com"><p>Order Now</p></a>
+                </div>
+                <div id="address">
+                    
+                    <h1><b>Wolveshead Pizza & Wings</b></h1>
+                    <p>1837 Lakewood Ranch Blvd<br>
+                        Lakewood Ranch, FL 34211</p>
+                    </div> 
+                    
+                </div>   
+            <!-- <a id=aboutLink></a> -->
         </div>
-        <div id="events"><p>Events to watch out for:<br>Happy Hour Daily 3-6<br>Every Monday: $9.99 Cheese Bar Pie and a Pint of Bud lt<br>Every Thursday: 2 Cheesburger Slammers for only $5.50<br>Specials Daily
-        <img src="wolfLogo.png" style="position: relative; left: -4em; top: -6em; height:15em; width:20em; opacity: 30%;">
-        </div>
-        <div id="findUs"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.597863466892!2d-82.43615886546485!3d27.48177618724361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c33baad4fbd115%3A0xa95843fbea8edffd!2s1837%20Lakewood%20Ranch%20Blvd%2C%20Bradenton%2C%20FL%2034211!5e0!3m2!1sen!2sus!4v1674061678288!5m2!1sen!2sus"  width="500" height="375" style="border:0; position: relative; left:10em; top:1em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img src="wolvesFront.jpg" style="border-radius: 20%; position: relative; top: 2em; left: 20em; height: 25em; width:20em;">
-        <img src="wolvesFrontDoor.jpg" style="border-radius: 20%; position: relative; top: 2em; left: 40em; height: 25em; width:20em;">
-        <img src="wolvesSide.jpg" style="border-radius: 20%; position: relative; top: 2em; left: 60em; height: 25em; width:20em;">
-        <a id="find"></a>
-        </div>
-</div>
-<script>
         
+        <div style="height:1px; display: block;"><a id="aboutLink"></a></div>
+        <div id="about">
+            
+            <img alt="John Breiner Restaurant Owner" src="john.JPG">
+            <div id="aboutTxtPc">
+                <h1>About Us...</h1><br>
+                <p>Wolveshead was opened in March of 2015 by John and Jackie Breiner.  Thanks to support from the local community, and a wonderful staff, Wolveshead became a staple of Lakewood Ranch in no time.<br><br>Now we continue the formula that made us successful: Great food, Great Atmosphere, and Fair prices. Our menu consists of delicious, made from scratch items including signature pizza and wings. With 22 beers on tap, as well as a large wine, seltzer and bottled beer selection we have something for everyone.<br><br> We have MLB Extra Innings, NFL Sunday ticket, and all Tampa Bay Lightning games displayed on our 15 T.Vs. Come find out why we are a regular part of so many people's week, and JOIN THE PACK!</p>
+            </div>
+            <div id="aboutTxtMobile">
+                <h1>About Us...</h1>
+                <p>Wolveshead was opened in March of 2015 by John and Jackie Breiner.  Thanks to support from the local community, and a wonderful staff, Wolveshead became a staple of Lakewood Ranch in no time.<br><br>Now we continue the formula that made us successful: Great food, Great Atmosphere, and Fair prices. Our menu consists of delicious, made from scratch items including signature pizza and wings. With 22 beers on tap, as well as a large wine, seltzer and bottled beer selection we have something for everyone.<br><br> We have MLB Extra Innings, NFL Sunday ticket, and all Tampa Bay Lightning games displayed on our 15 T.Vs. Come find out why we are a regular part of so many people's week, and JOIN THE PACK!</p>
+            </div>
+        </div>
+        <div id="review" class="parallax">
+            <div id="reviewLabelWrap">
+            <h1 id="reviewLabel">Customer Reviews</h1><br>
+            </div>
+            <div id="reviewWrap">
+                <div id="reviewTxtWrap">
+                    <div class="reviewTxt"><i>"Everything I've ever had here is fantastic. Found this place by accident and has become my favorite restaurant. Staff is super friendly and always gives us the impression that they remember us. Great beer selection and great place to watch a game."</i><br><img src="evan.png" alt="google review profile picture" style="display:inline; position: relative; top:.5em; left:.5em; height: 1.8em; width: auto;">&nbsp;&nbsp;Evan Warner<img src="fiveStar.png" alt="5 stars" style="display:inline; position: relative; top:1.2em; left:-5.6em; height: 1.5em; width: auto;"></div>
+                    <div class="reviewTxt"><i>"Ended up finding this place by chance, and have been two straight Sunday's now. Excellent service, nice atmosphere and phenomenal food. You will not be disappointed."</i><br><img src="shaun.png" alt="google review profile picture" style="display:inline; position: relative; top:.5em; left:.5em; height: 1.8em; width: auto;">&nbsp;&nbsp;Shaun McMahon<img src="fiveStar.png" alt="5 stars"  style="display:inline; position: relative; top:1.1em; left:-7.3em; height: 1.5em; width: auto;"></div>
+                    <div class="reviewTxt"><i>"Wolves Head has become one of our new favorite spots. We have been searching for a place with a great atmosphere and good wings. The wings were amazing. The service was wonderful. Thank you for such an awesome experience."</i><br><img src="tairyn.png" alt="google review profile picture" style="display:inline; position: relative; top:.5em; left:.5em; height: 1.8em; width: auto;">&nbsp;&nbsp;Tairyn Soczek<img src="fiveStar.png" alt="5 stars" style="display:inline; position: relative; top:1em; left:-6em; height: 1.5em; width: auto;"></div>
+                    <div class="reviewTxt"><i>"This place is amazing, from their friendly staff, to their accommodating owner and all the way to their made from scratch meals every bit of this place is gold!"</i><br><img src="christina.png" alt="google review profile picture" style="display:inline; position: relative; top:.5em; left:.5em; height: 1.8em; width: auto;">&nbsp;&nbsp;Christina Martinez<img src="fiveStar.png" alt="5 stars" style="display:inline; position: relative; top:1em; left:-8em; height: 1.5em; width: auto;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <a id="special" style="z-index:-1;"></a> -->
+        <div id="special">
+            <a id="specialLink"></a>
+            <div id="specialWrap">
+                <div>
+                    <img src="wolfLogo.png" alt="wolfhead logo" style="transform: scaleX(-1);">
+                </div>
+                <div style="position:relative; display: block; width:100%">
+                    <div style="position: relative; left:-1em; display: flex; justify-content: space-around; width:100%;">
+                        <h2><u>Specials</u></h2>
+                    </div>
+                    <div>
+                        <p style="text-align:center;">Rotating soup of the day and daily specials.</p><p>Monday: $9.99 Cheese Bar Pie and a Pint of Bud lt<br>Thursday: 2 Cheesburger Slammers for only $5.50<br>Happy Hour Daily 3pm-6pm: 5.55 Craft Beef Drafts, 1/2 price house wine, and bar bite specials.
+                    </div>
+                </div>
+                <div>
+                    <img src="wolfLogo.png" alt="wolfhead logo">
+                </div>
+            </div>
+        </div>
+        <div id="findUs">
+            
+            <div id="mapWrap">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.597863466892!2d-82.43615886546485!3d27.48177618724361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c33baad4fbd115%3A0xa95843fbea8edffd!2s1837%20Lakewood%20Ranch%20Blvd%2C%20Bradenton%2C%20FL%2034211!5e0!3m2!1sen!2sus!4v1674061678288!5m2!1sen!2sus"  width="500" height="375" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="storefrontPics">
+                    <img src="wolvesFront.jpg" alt="Front door of Wolveshead Pizza and Wings">
+                    <img src="wolvesFrontDoor.jpg" alt="Front door of Wolveshead Pizza and Wings">
+                    <img src="wolvesSide.JPG" alt="Front door of Wolveshead Pizza and Wings">
+                </div>
+            </div>
+            
+        </div>
+        <div id="customerPics">
+            <ul class="gallery-slideshow1">
+                <li><img src="customer.jpg" style = "width: 100%; height: 10em;" alt="Multiple pictures of customers having fun at Wolveshead"></li>
+                <li><img src="customer2.jpg" style = "width: 100%; height: 10em;" alt="Multiple pictures of customers having fun at Wolveshead"></li>
+                <li><img src="customer3.jpg" style = "width: 100%; height: 10em;" alt="Multiple pictures of customers having fun at Wolveshead"></li>
+                <li><img src="customer4.jpg" style = "width: 100%; height: 10em;" alt="Multiple pictures of customers having fun at Wolveshead"></li>
+            </ul>
+
+        </div>
+
+
+
+        <div id="footer">
+            <div id="footerWrap">
+                <footer class="py-3 my-3 skills" >
+                    <div id="skills">
+                      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                        <li class="nav-item"><a href="http://order.wolvesheadpizza.com" class="nav-link px-2 text-muted">Order Online</a></li>
+                      </ul>
+                      <p class="text-center text-muted">&copy; 2023 Wolveshead Pizza & Wings</p>
+                    </div>
+                  </footer>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="jquery-gallery.js"></script>
+<script>
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
+
+
 </body>
 </html>
