@@ -143,8 +143,16 @@
 $(function() {
   $('.gallery-slideshow').slideshow({
     interval: 6000,
-    height: 800,
-    width: 2800
+    height: 1200,
+    width: 2600
+    
+  });
+});
+$(function() {
+  $('.gallery-slideshow-2200').slideshow({
+    interval: 6000,
+    height: 1080,
+    width: 2200
     
   });
 });
@@ -152,8 +160,44 @@ $(function() {
 $(function() {
   $('.gallery-slideshow1').slideshow({
     interval: 6000,
-    height: 500,
+    height: 350,
     width: 2800
+    
+  });
+});
+( jQuery, window, document );
+$(function() {
+  $('.gallery-slideshow-1000').slideshow({
+    interval: 6000,
+    height: 650,
+    width: 1100
+    
+  });
+});
+( jQuery, window, document );
+$(function() {
+  $('.gallery-slideshow-800').slideshow({
+    interval: 6000,
+    height: 300,
+    width: 800
+    
+  });
+});
+( jQuery, window, document );
+$(function() {
+  $('.gallery-slideshow-600').slideshow({
+    interval: 6000,
+    height: 300,
+    width: 650
+    
+  });
+});
+( jQuery, window, document );
+$(function() {
+  $('.gallery-slideshow-500').slideshow({
+    interval: 6000,
+    height: 200,
+    width: 400
     
   });
 });

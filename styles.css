@@ -20,12 +20,14 @@ body{
   width: 100%;
   font-family: "hammersmithOne";
   color: black;
+  overflow-x: hidden;
+  
 }
 
     
 .parallax {
 
-  background-image: url("nachos.JPG");
+  background-image: url("nachos.webp");
   height: 100%;
   max-width: 100%;
   background-attachment: fixed;
@@ -48,17 +50,20 @@ position: sticky;
 position: -webkit-sticky;
 z-index: 10;
 display: flex;
-height: 7em;
+justify-content: space-between;
+height: 8em;
 width: 100%;
-background: radial-gradient(100% 40% ellipse at center 80%, #ff000000 70%, #831B14ff 100%);
+background: rgb(131,27,20);
+border-bottom: 10px solid black;
+/* background: linear-gradient(0deg, rgba(131,27,20,0) 2%, rgba(131,27,20,1) 25%); */
 }
 #navWrap{
   position: sticky;
-  height: 7em;
+  height: 8em;
   width: 100%;
   display: flex;
-  align-items:initial;
-  justify-content: space-between;
+  align-items:center;
+  justify-content: space-evenly;
   z-index: 5;
 }
 #navLeft{
@@ -75,30 +80,19 @@ background: radial-gradient(100% 40% ellipse at center 80%, #ff000000 70%, #831B
   position: relative;
   left:-.4em;
 }
-#cover{
-  display:flex; 
-  justify-content:center; 
-  background: rgb(131,27,20);
-  background: linear-gradient(90deg, rgba(131,27,20,0) 33%, rgba(131,27,20,1) 33%, rgba(131,27,20,1) 50%, rgba(131,27,20,1) 67%, rgba(131,27,20,0) 67%); 
-  position:relative; 
-  z-index:11; 
-  height: 3.5em;  
-  width:50%;
-}
 #logoWrap{
-  min-width: 100%;
   position: relative;
-  display: flex;
-  justify-content: center;
-  top:-9em;
-  left:-2em;
+  display: block;
+  width:fit-content;
+  top:-.5em;
+  height: 7em;
 }
-#cover img{
-  width: 25em;
-  height: 14em;
+#logoWrap img{
+  display: block;
+  width: 10em;
+  height: 5.95em;
   margin: 0;
 }
-
 #navRight{
   display: flex;
   align-items: center;
@@ -112,18 +106,14 @@ background: radial-gradient(100% 40% ellipse at center 80%, #ff000000 70%, #831B
 }
 .navLink{
   font-family:"Impact", fantasy;
-  background-color: #ff000000;
-  border: solid 3px black;
-  border-style: double;
-  color: silver;
+  color: white;
   text-decoration: none;
-  margin: .1em;
+  margin: 2em;
   font-size: 2em;
 }
 .navLink:hover{
-  transition: ease 1s;
-  background-color: #343B44ff;
   text-decoration: none;
+  color:black;
 } 
 div.sticky {
   position: -webkit-sticky;
@@ -131,55 +121,95 @@ div.sticky {
   top: 0em;
   font-size: 20px;
   height: 8em;
-  z-index: 10;
-  
+  z-index: 10; 
 }
 #phNum{
+  display: block;
   position: relative; 
-  top:0em; 
   color: white; 
-  font-size: 2em; 
+  font-size: 1.1em; 
   text-decoration: none; 
   height: 1em;
+  text-align: center;
+  top:-.5em;
 }
 #phNum:hover{
   transition: ease .4s;
   color: black;
 }
 #hero{
+  background-color: black;
   display: flex;
   justify-content: center;
   z-index: 0;
   position: relative;
-  top:-10em;
-  height: 40em;
-
+  height: 70em;
+  overflow: hidden;
 }
-
+#hero2200{
+  background-color: black;
+  display: none;
+  justify-content: center;
+  z-index: 0;
+  height: 20em;
+  overflow: hidden;
+}
+#hero1000{
+  background-color: black;
+  display: none;
+  justify-content: center;
+  z-index: 0;
+  height: 40em;
+  overflow: hidden;
+}
+#heroSmall{
+  background-color: black;
+  display: none;
+  overflow: hidden;
+}
+#heroSmallest{
+  background-color: black;
+  display: none;
+  justify-content: center;
+  z-index: 0;
+  height: 20em;
+  overflow: hidden;
+}
+#hero500{
+  background-color: black;
+  display: none;
+  justify-content: center;
+  z-index: 0;
+  height: 20em;
+  overflow: hidden;
+}
 #address {
   position: relative;
   display:block;
   font-family: "hammersmithOne";
   height:fit-content;
+  color: silver;
 }
 
-#hours{
+#infoTxtLeft{
   position: relative;
   display: block;
   height: fit-content;
-  width:20em;
+  width:25%;
   font-family: "hammersmithOne";
+  font-size: 1.5em;
+  color: white;
 }
 #info  {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #831B14ff;
   position: absolute;
   border-top: solid black 15px;
   left: 0px;
   width:100%;
-  top:49em;
+  top:77em;
   height:15em;
   z-index: 1;
   box-shadow: 0px 4px 8px 2px;
@@ -187,8 +217,8 @@ div.sticky {
 #info p{
   font-size: 1.5em;
 }
-#hours p{
-  font-size: 1.2em;
+#infoTxtLeft h1{
+  font-size: 4em;
 }
 #info h1 {
   font-size: 2em;
@@ -208,9 +238,11 @@ div.sticky {
   background: linear-gradient(90deg, rgba(147,105,83,1) 0%, rgba(212,172,152,1) 12%, rgba(147,105,83,1) 25%, rgba(176,134,113,1) 37%, rgba(212,172,152,1) 50%, rgba(176,134,113,1) 63%, rgba(147,105,83,1) 75%, rgba(212,172,152,1) 88%, rgba(147,105,83,1) 100%); 
   height: 8rem;
   width: 25rem;
+  left: -13em;
   border-radius: 35%;
   border: rgb(147,105,83) 5px solid;
   box-shadow: 0 0 10px 5px black;
+  font-family: "hammersmithone";
 }
 #order:hover{
   box-shadow: 0 0;
@@ -235,31 +267,25 @@ div.sticky {
   background-color: #A3B7C4ff;
   position: relative;
   top:11.5em;
-  left: 0px;
+
   height: 30rem;
   width: 100%;
   font-family: "hammersmithOne";
 }
 #about img{
-  /* display: inline;
-  float: left; */
-  width:30%;
-  height:110%;
+  width:30em;
+  height:27em;
   position: relative;
-  /* left: 5em; */
-  top: -.5em;
+  top: .75em;
   z-index: 1;
 }
 
 #aboutTxtPc{
   display: block;
-  /* visibility: visible; */
-  font-size: 1.6em;
+  font-size: 1.4em;
   position: relative;
-  top: -.5em;
-  /* float:right; */
+  top: 1em;
   width:50em;
-  /* left: -7em; */
 }
 #aboutTxtMobile{
   display: none;
@@ -289,6 +315,7 @@ div.sticky {
   /* align-items: center; */
   height:30em;
   position: relative;
+  top:2em;
   width: 100%;
 }
 #reviewLabel{
@@ -304,7 +331,7 @@ div.sticky {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: white;
+  background-color: darkgray;
   border-bottom: 10px solid black ;
 }
 .reviewTxt{
@@ -410,6 +437,14 @@ div.sticky {
   justify-content:space-evenly;
   background-color: #A3B7C4;
 }
+#mapTxtWrap{
+  font-size: 2em;
+  font-family: "hammersmithone";
+
+}
+#mapTxtWrap p{
+  margin: 1.5em 0 1.5em 0;
+}
 #storefrontPics{
   position: relative;
   align-items: center;
@@ -437,32 +472,42 @@ div.sticky {
 
 #footer{
   position: relative;
-  background-color: antiquewhite;
-  top:11.5em;
+  background-color: #831B14ff;
+  top:13.4em;
   height:12em;
   width: 100%;
   border-top: solid black 10px;
+  color: white;
+}
+#footer a{
+  color: white;
+}
+.nav-item a{
+  color: white;
+}
+#menuBody{
+  background-color: black;
+
 }
 #menu{
+
   width: 100%;
-  height: 100%;
+  height: 83em;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: contain;
-  background-color: black;
 }
-#menu img{
-  margin:2em;
-  width:45%;
-  height: 95%;
+#menuWrap{
+  position: relative;
+  width:100%;
+  height:100%;
 }
+#menuWrap img{}
 
 
-
-
-@media screen and (max-width:1600px){
-  #menu{
+@media screen and (max-width:2200px){
+  /* #menu{
     object-fit: cover;
     width:100%;
     height:100%;
@@ -470,29 +515,47 @@ div.sticky {
   #menu img{
     width: 100%;
     height: 49.5%;
+  } */
+  #hero{
+    display: none;
   }
-  #cover{
-    width: 30em;
-    background-color: #831B14ff;
+  #hero2200{
+    display: flex;
+    height:70em;
+  }
+  #order{
+    left:-6em;
   }
   #aboutTxt{
     width:50%;
     height:fit-content;
   }
   #about p{
-    font-size: .6em;
+    font-size: .9em;
     margin:0;
   }
-  #about h1{
+  #about h2{
     font-size: .8em;
-  }
+  } 
+
   #special{
-    font-size: 1.2em;
+    font-size: 1.5em;
     top:9em;
+    height:14.8em;
+    top:7.3em;
   }
   #special a{
     position: relative;
     top:-3em;
+  }
+  #special img{
+    height:15em;
+  }
+  #specialWrap p{
+    font-size: 1.2em;
+  }
+  #specialWrap h2{
+    font-size: 1.8em;
   }
   #findUs a{
     position: relative;
@@ -526,10 +589,11 @@ div.sticky {
     height:fit-content;
   }
 
+
 }
 
-@media screen and (max-width:1300px){
-  #menu{
+@media screen and (max-width:1900px){
+  /* #menu{
     object-fit: cover;
     width:100%;
     height:100%;
@@ -537,10 +601,83 @@ div.sticky {
   #menu img{
     width: 100%;
     height: 49.5%;
+  } */
+  #aboutTxt{
+    width:50%;
+    height:fit-content;
   }
+  #about p{
+    font-size: .8em;
+    margin:0;
+  }
+  #about h1{
+    font-size: 1.4em;
+  }
+  #special a{
+    position: relative;
+    top:-3em;
+  }
+  #specialWrap p{
+    font-size: 1.1em;
+  }
+  #special img{
+    height:15em;
+  }
+  #findUs a{
+    position: relative;
+    top:-3em;
+  }
+  #storefrontPics img{
+    width: 13em;
+    height: 20em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #findUs iframe{
+    width:100%;
+  }
+  #findUs{
+    top:11.4em;
+  }
+  #findUs a{
+    position: relative;
+    top:-3em;
+  }
+  #customerPics{
+    top:11.4em;
+  }
+  #footer{
+    top:11em;
+  }
+  .navLink {
+    font-size: 1.5em;
+    height:fit-content;
+  }
+
+}
+
+@media screen and (max-width:1700px){
+  /* #menu{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+  #menu img{
+    width: 100%;
+    height: 49.5%;
+  } */
   #cover{
-    width: 20em;
+    width: 10.5em;
     background-color: #831B14ff;
+    /* background-color: black; */
+  }
+  #cover img{
+    width:15em;
+    height:10em;
+  }
+  #phNum{
+    font-size: 1.2em;
+    top:-.75em;
   }
   #aboutTxtPc{
     display: none;
@@ -551,6 +688,9 @@ div.sticky {
     width:50%;
     height:15em;
   }
+  #order{
+    left:-7em;
+  }
   #about p{
     font-size: .7em;
     margin:0;
@@ -558,11 +698,11 @@ div.sticky {
     padding-bottom: 0em;
   }
   #about h1{
-    font-size: .9em;
+    font-size: 1.2em;
     top:1em;
   }
   #about img{
-    top:.1em;
+    top:.5em;
     height:27em;
     width: 30em;
   }
@@ -600,16 +740,15 @@ div.sticky {
   #footer{
     top:11.4em;
   }
-
   .navLink {
     font-size: 1.5em;
     height:fit-content;
   }
 
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1600px){
   #menu{
-    object-fit: cover;
+    display: block;
     width:100%;
     height:100%;
   }
@@ -618,12 +757,13 @@ div.sticky {
     height: 49.5%;
   }
   #cover{
-    width: 18em;
+    width: 12em;
     height:4em;
-    background-color: #831B14ff;
+    /* background-color: #831B14ff; */
+    /* background-color: black; */
   }
   #cover img{
-    width: 17em;
+    width: 12em;
   }
   #info{
     font-size: .8em;
@@ -643,13 +783,13 @@ div.sticky {
     height:15em;
   }
   #about p{
-    font-size: .6em;
+    font-size: .7em;
     margin:0;
     padding-top: 1em;
     padding-bottom: 0em;
   }
   #about h1{
-    font-size: .9em;
+    font-size: 1.3em;
     top:1em;
   }
   #about img{
@@ -659,7 +799,7 @@ div.sticky {
   }
   #review{
     top:0em;
-    font-size: .7em;
+    font-size: .8em;
   }
   #special{
     font-size: 1.2em;
@@ -701,26 +841,13 @@ div.sticky {
   }
 
 }
-@media screen and (max-width:900px){
-  #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  }
-  #cover{
-    width: 13em;
-    height:4em;
-    background-color: #831B14ff;
-  }
+@media screen and (max-width:1400px){
+
   #cover img{
     width: 14em;
     height:10em;
   }
-  #hours{
+  #infoTxtLeft{
     font-size: .9em;
   }
   #address{
@@ -740,19 +867,19 @@ div.sticky {
   }
 
   #about p{
-    font-size: .55em;
+    font-size: .7em;
     margin:0;
     padding-top: 1em;
     padding-bottom: 0em;
   }
   #about h1{
-    font-size: .8em;
+    font-size: 1.2em;
     top:1em;
   }
   #about img{
     top:.1em;
-    height:22em;
-    width: 27em;
+    height:26em;
+    width: 30em;
   }
   #review{
     top:0em;
@@ -771,10 +898,13 @@ div.sticky {
     top:-3em;
   }
   #storefrontPics img{
-    width: 8em;
-    height: 16em;
+    width: 9em;
+    height: 20em;
     margin-left: .6em;
     margin-right: .6em;
+  }
+  #mapTxtWrap{
+    font-size: 1.8em;
   }
   #mapWrap{
     height:22em;
@@ -803,7 +933,7 @@ div.sticky {
   }
   #phNum{
     font-size: 1em;
-    top:1em;
+    top:-.5em;
   }
   #order {
     height: 5rem;
@@ -811,30 +941,25 @@ div.sticky {
     font-size: .7em;
   }
 }
-@media screen and (max-width:800px){
-  #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
+@media screen and (max-width:1200px){
+
+  #logoWrap{
+    top:.5em;
   }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
+  #logoWrap img{
+    width: 8em;
+    height:5em;
+    left:1em;
   }
-  #cover{
-    width: 10em;
-    height:4em;
-    background-color: #831B14ff;
+  #hero{
+    top:0em;
+    height:49em;
   }
-  #cover img{
-    width: 12em;
-    height:8em;
-  }
-  #hours{
-    font-size: .9em;
+  #infoTxtLeft{
+    font-size: 1em;
   }
   #address{
-    font-size: .7em;
+    font-size: .9em;
   }
   #about{
     top:0em;
@@ -850,7 +975,7 @@ div.sticky {
   }
 
   #about p{
-    font-size: .5em;
+    font-size: .65em;
     margin:0;
     padding-top: 1em;
     padding-bottom: 0em;
@@ -858,18 +983,137 @@ div.sticky {
     top:1em;
   }
   #about h1{
+    font-size: 1em;
+    top:1em;
+    position: relative;
+  }
+  #about img{
+    top:.1em;
+    height:25em;
+    width: 28em;
+  }
+  #review{
+    top:0em;
     font-size: .8em;
+  }
+  #reviewTxtWrap :nth-child(even){
+    height: 16.5em;
+  }
+  #reviewTxtWrap :nth-child(odd){
+    height: 22em;
+  }#reviewPic{
+    top:-1em;
+  }
+  .reviewTxt:hover{
+    transition: ease .3s;
+    /* height: 100%; */
+    background-color: bisque;
+    box-shadow: 0px 0px 5px 5px;
+    z-index: 3;
+    font-size: 1.4em;
+  }
+  #special{
+    font-size: .9em;
+    top:0em;
+    height: 14em;
+  }
+  #special a{
+    position: relative;
+    top:-3em;
+  }
+  #findUs a{
+    position: relative;
+    top:-3em;
+  }
+  #storefrontPics img{
+    width: 7em;
+    height: 14em;
+    margin-left: .6em;
+    margin-right: .6em;
+  }
+  #findUs iframe{
+    width:13em;
+    height:13em;
+  }
+  #findUs{
+    top:1.6em;
+    height:13em;
+  }
+  #mapWrap{
+    height:15em;
+  }
+  #mapTxtWrap{
+    font-size: 1.2em;
+  }
+  #findUs a{
+    position: relative;
+    top:-3em;
+  }
+  #customerPics{
+    top: 1.8em;
+  }
+  #footer{
+    top:3.7em;
+  }
+  .navLink {
+    font-size: 1.4em;
+    margin: 0 1em 0 1em;
+    height:fit-content;
+  }
+  #phNum{
+    font-size: 1em;
+    top:-.5em;
+  }
+  #order {
+    height: 5rem;
+    width: 15rem;
+    font-size: .7em;
+  }
+}
+@media screen and (max-width:1150px){
+
+  #hero2200{
+    display: none;
+  }
+  #hero1000{
+    display: flex;
+  }
+  #about{
+    top:0em;
+    height:23.5em;
+  }
+  #aboutTxtPc{
+    display: none;
+  }
+  #aboutTxtMobile{
+    display:block;
+    visibility: visible;
+    width:50%;
+    height:15em;
+    top:1em;
+  }
+
+  #about p{
+    font-size: .55em;
+    margin:0;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    position: relative;
+    top:1em;
+  }
+  #about h1{
+    font-size: .9em;
     top:1em;
     position: relative;
   }
   #about img{
     top:.1em;
     height:20em;
-    width: 24em;
+    width: 25em;
   }
   #review{
     top:0em;
-    font-size: .6em;
+    font-size: .8em;
   }
   #reviewTxtWrap :nth-child(even){
     height: 16.5em;
@@ -890,13 +1134,9 @@ div.sticky {
   #special{
     font-size: .9em;
     top:0em;
-    height: 11em;
+    height: 14em;
   }
   #special a{
-    position: relative;
-    top:-3em;
-  }
-  #findUs a{
     position: relative;
     top:-3em;
   }
@@ -925,149 +1165,7 @@ div.sticky {
     top: 1.8em;
   }
   #footer{
-    top:4em;
-  }
-  .navLink {
-    font-size: 1em;
-    height:fit-content;
-  }
-  #phNum{
-    font-size: 1em;
-    top:1em;
-  }
-  #order {
-    height: 5rem;
-    width: 15rem;
-    font-size: .7em;
-  }
-}
-@media screen and (max-width:700px){
-  #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  }
-  #cover{
-    width: 7em;
-    height:4em;
-    background-color: #831B14ff;
-  }
-  #cover img{
-    width: 10em;
-    height:6em;
-  }
-  #info{
-    top:0em;
-  }
-  #hours{
-    font-size: .9em;
-  }
-  #address{
-    font-size: .6em;
-    top:-1.5em;
-  }
-  #address p{
-    text-align: center;
-  }
-  #address h1{
-    font-size:2.5em;
-  }
-  #about{
-    top:0em;
-    height:23.5em;
-  }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-    top:1em;
-  }
-
-  #about p{
-    font-size: .45em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
-  }
-  #about h1{
-    font-size: .8em;
-    top:1em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:15em;
-    width: 20em;
-  }
-  #review{
-    top:0em;
-    font-size: .6em;
-  }
-  #reviewTxtWrap :nth-child(even){
-    height: 16.5em;
-  }
-  #reviewTxtWrap :nth-child(odd){
-    height: 22em;
-  }#reviewPic{
-    top:-1em;
-  }
-  .reviewTxt:hover{
-    transition: ease .3s;
-    /* height: 100%; */
-    background-color: bisque;
-    box-shadow: 0px 0px 5px 5px;
-    z-index: 3;
-    font-size: 1.4em;
-  }
-  #special{
-    font-size: .9em;
-    top:0em;
-    height: 11em;
-  }
-  #special a{
-    position: relative;
-    top:-3em;
-  }
-  #findUs a{
-    position: relative;
-    top:-3em;
-  }
-  #storefrontPics img{
-    width: 7em;
-    height: 14em;
-    margin-left: .6em;
-    margin-right: .6em;
-  }
-  #findUs iframe{
-    width:13em;
-    height:13em;
-  }
-  #findUs{
-    top:1.6em;
-    height:13em;
-  }
-  #mapWrap{
-    height:15em;
-  }
-  #findUs a{
-    position: relative;
-    top:-3em;
-  }
-  #customerPics{
-    top: 1.8em;
-  }
-  #footer{
-    top:4em;
+    top:3.7em;
   }
   .navLink {
     font-size: .8em;
@@ -1075,155 +1173,7 @@ div.sticky {
   }
   #phNum{
     font-size: .8em;
-    top:1.2em;
-    left:-.5em;
-  }
-  #order {
-    height: 5rem;
-    width: 10rem;
-    font-size: .7em;
-  }
-  #hero{
-
-  }
-}
-@media screen and (max-width:625px){
-  #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  }
-  #cover{
-    width: 5em;
-    height:4em;
-    left:.7em;
-    background-color: #831B14ff;
-  }
-  #cover img{
-    width: 8em;
-    height:6em;
-  }
-  #info{
-    top:0em;
-  }
-  #hours{
-    font-size: .9em;
-  }
-  #address{
-    font-size: .6em;
-    top:-1.5em;
-  }
-  #address p{
-    text-align: center;
-  }
-  #address h1{
-    font-size:2em;
-  }
-  #about{
-    top:0em;
-    height:23.5em;
-  }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-    top:1em;
-  }
-
-  #about p{
-    font-size: .45em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
-  }
-  #about h1{
-    font-size: .8em;
-    top:1em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:13em;
-    width: 17em;
-  }
-  #review{
-    top:0em;
-    font-size: .45em;
-  }
-  #reviewTxtWrap :nth-child(even){
-    height: 17em;
-  }
-  #reviewTxtWrap :nth-child(odd){
-    height: 22.5em;
-  }#reviewPic{
-    top:-1em;
-  }
-  .reviewTxt:hover{
-    transition: ease .3s;
-    /* height: 100%; */
-    background-color: bisque;
-    box-shadow: 0px 0px 5px 5px;
-    z-index: 3;
-    font-size: 1.4em;
-  }
-  #special{
-    font-size: .9em;
-    top:0em;
-    height: 11em;
-  }
-  #special a{
-    position: relative;
-    top:-3em;
-  }
-  #findUs a{
-    position: relative;
-    top:-3em;
-  }
-  #storefrontPics img{
-    width: 7em;
-    height: 12em;
-    margin-left: .6em;
-    margin-right: .6em;
-  }
-  #findUs iframe{
-    width:11em;
-    height:11em;
-  }
-  #findUs{
-    top:1.6em;
-    height:13em;
-  }
-  #mapWrap{
-    height:15em;
-  }
-  #findUs a{
-    position: relative;
-    top:-3em;
-  }
-  #customerPics{
-    top: 1.8em;
-  }
-  #footer{
-    top:4em;
-  }
-  .navLink {
-    font-size: .8em;
-    height:fit-content;
-  }
-  #phNum{
-    font-size: .7em;
-    top:1.2em;
-    left:-.5em;
+    top:-.5em;
   }
   #order {
     height: 5rem;
@@ -1231,35 +1181,25 @@ div.sticky {
     font-size: .7em;
   }
 }
-@media screen and (max-width:600px){
-  #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
+
+@media screen and (max-width:1100px){
+
+  #logoWrap{
+    top: 0em;
   }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  }
-  #cover{
-    width: 6em;
-    height:4em;
-    left:.7em;
-    background-color: #831B14ff;
-  }
-  #cover img{
-    width: 8em;
-    height:4em;
+  #logoWrap img{
+    width: 9em;
+    height:6em;
   }
   #info{
     top:0em;
   }
-  #hours{
+  #infoTxtLeft{
     font-size: .8em;
   }
   #address{
-    font-size: .7em;
-    top:-1.5em;
+    font-size: .8em;
+    top:0em;
   }
   #address p{
     text-align: center;
@@ -1281,24 +1221,31 @@ div.sticky {
     height:15em;
     top:1em;
   }
-
+#hero{
+  display: none;
+}
+#hero1000{
+  display: flex;
+  top:0;
+  height:35em;
+}
   #about p{
-    font-size: .35em;
+    font-size: .48em;
     margin:0;
-    padding-top: 1em;
+    padding-top: 1.2em;
     padding-bottom: 0em;
     position: relative;
     top:1em;
   }
   #about h1{
-    font-size: .8em;
+    font-size: .9em;
     top:1em;
     position: relative;
   }
   #about img{
     top:.1em;
-    height:11em;
-    width: 15em;
+    height:18em;
+    width: 20em;
   }
   #review{
     top:0em;
@@ -1326,7 +1273,7 @@ div.sticky {
     height: 10em;
     font-size: .85em;
     top:0em;
-    height: 14em;
+    height: 16em;
   }
   #special a{
     position: relative;
@@ -1337,8 +1284,8 @@ div.sticky {
     top:-3em;
   }
   #storefrontPics img{
-    width: 5em;
-    height: 10em;
+    width: 7em;
+    height: 12em;
     margin-left: .3em;
     margin-right: .3em;
   }
@@ -1347,8 +1294,8 @@ div.sticky {
     height:11em;
   }
   #findUs{
-    top:1.6em;
-    height:13em;
+    top:1.5em;
+    height:13.1em;
   }
   #mapWrap{
     height:15em;
@@ -1358,15 +1305,16 @@ div.sticky {
     top:-15em;
   }
   #customerPics{
-    top: 2em;
+    top: 1.8em;
     height:12em;
   }
   #footer{
-    top:4em;
+    top:12em;
   }
   .navLink {
-    font-size: .65em;
+    font-size: 1.1em;
     height:fit-content;
+    margin: 0 1em 0 1em;
   }
   #navLeft{
     top:-.5em;
@@ -1381,9 +1329,508 @@ div.sticky {
     height:1.5em;
   }
   #phNum{
+    font-size: 1em;
+    top:-.5em;
+  }
+  #order {
+    font-family: "hammersmithone";
+    height: 7rem;
+    width: 10rem;
+    font-size: 1em;
+    left:-2em;
+  }
+  #hero{
+    /* max-height: 20em; */
+  }
+  #footer{
+    top:11.7em;
+    height:13em;
+  }
+}
+@media screen and (max-width:900px){
+
+  #cover img{
+    width: 12em;
+    height:6em;
+  }
+  #info{
+    top:0em;
+  }
+  #infoTxtLeft{
+    font-size: .8em;
+  }
+  #address{
+    font-size: .9em;
+    top:0em;
+  }
+  #address p{
+    text-align: center;
+  }
+  #address h1{
+    font-size:2em;
+  }
+  #about{
+    top:0em;
+    height:22.5em;
+  }
+  #aboutTxtPc{
+    display: none;
+  }
+  #aboutTxtMobile{
+    display:block;
+    visibility: visible;
+    width:40%;
+    height:15em;
+    top:1em;
+  }
+
+  #about p{
+    font-size: .44em;
+    margin:0;
+    padding-top: 1.2em;
+    padding-bottom: 0em;
+    position: relative;
+    top:1em;
+  }
+  #about h1{
+    font-size: .9em;
+    top:1em;
+    position: relative;
+  }
+  #about img{
+    top:.1em;
+    height:18em;
+    width: 20em;
+  }
+  #review{
+    top:0em;
+    font-size: .45em;
+    display: none;
+  }
+  #reviewTxtWrap :nth-child(even){
+    height: 19em;
+  }
+  #reviewTxtWrap :nth-child(odd){
+    height: 23em;
+  }#reviewPic{
+    top:-1em;
+  }
+  .reviewTxt:hover{
+    transition: ease .3s;
+    background-color: bisque;
+    box-shadow: 0px 0px 5px 5px;
+    z-index: 3;
+    font-size: 1.4em;
+  }
+  #special{
+    border-top: 10px solid black;
+    height: 10em;
+    font-size: .85em;
+    top:0em;
+    height: 16em;
+  }
+  #special a{
+    position: relative;
+    top:-3em;
+  }
+  #findUs a{
+    position: relative;
+    top:-3em;
+  }
+  #storefrontPics img{
+    width: 7em;
+    height: 12em;
+    margin-left: .3em;
+    margin-right: .3em;
+  }
+  #findUs iframe{
+    width:11em;
+    height:11em;
+  }
+  #findUs{
+    top:1.6em;
+    height:13.1em;
+  }
+  #mapWrap{
+    height:15em;
+  }
+  #findUs a{
+    position: relative;
+    top:-15em;
+  }
+  #customerPics{
+    top: 1.9em;
+    height:12em;
+  }
+  #footer{
+    top:11.8em;
+  }
+  .navLink {
+    font-size: 1em;
+    top:.5em;
+    margin: 0 .5em 0 .5em;
+    width:fit-content;
+    height:fit-content;
+  }
+  #navLeft{
+    top:-.5em;
+    width: 15em;
+  }
+  #navRight{
+    top:-.5em;
+    width: 15em;
+    margin: 0 .5em 0 .5em;
+  }
+  #navLeft img{
+    height:2em;
+  }
+  #navRight img{
+    height:1.5em;
+  }
+  #phNum{
+    font-size: .8em;
+    top:-.5em;
+
+  }
+  #order {
+    height: 5rem;
+    width: 10rem;
     font-size: .6em;
-    top:1.2em;
-    left:-.5em;
+    left:-3.5em;
+  }
+  #hero1000{
+    display: flex;
+  }
+  #footer{
+    height:12.5em;
+  }
+}
+@media screen and (max-width:800px){
+  #logoWrap img{
+    width: 7em;
+    height:5em;
+  }
+  #info{
+    top:0em;
+  }
+  #infoTxtLeft{
+    font-size: .8em;
+  }
+  #address{
+    font-size: .8em;
+    top:0em;
+  }
+  #address p{
+    text-align: center;
+  }
+  #address h1{
+    font-size:2em;
+  }
+  #about{
+    top:0em;
+    height:22.5em;
+  }
+  #aboutTxtPc{
+    display: none;
+  }
+  #aboutTxtMobile{
+    display:block;
+    visibility: visible;
+    width:40%;
+    height:15em;
+    top:1em;
+  }
+
+  #about p{
+    font-size: .44em;
+    margin:0;
+    padding-top: 1.2em;
+    padding-bottom: 0em;
+    position: relative;
+    top:1em;
+  }
+  #about h1{
+    font-size: .9em;
+    top:1em;
+    position: relative;
+  }
+  #about img{
+    top:.1em;
+    height:18em;
+    width: 20em;
+  }
+  #review{
+    top:0em;
+    font-size: .45em;
+    display: none;
+  }
+  #reviewTxtWrap :nth-child(even){
+    height: 19em;
+  }
+  #reviewTxtWrap :nth-child(odd){
+    height: 23em;
+  }#reviewPic{
+    top:-1em;
+  }
+  .reviewTxt:hover{
+    transition: ease .3s;
+    background-color: bisque;
+    box-shadow: 0px 0px 5px 5px;
+    z-index: 3;
+    font-size: 1.4em;
+  }
+  #special{
+    border-top: 10px solid black;
+    height: 10em;
+    font-size: .85em;
+    top:0em;
+    height: 16em;
+  }
+  #special a{
+    position: relative;
+    top:-3em;
+  }
+  #findUs a{
+    position: relative;
+    top:-2.9em;
+  }
+  #storefrontPics img{
+    width: 6em;
+    height: 12em;
+    margin-left: .3em;
+    margin-right: .3em;
+  }
+  #findUs iframe{
+    width:11em;
+    height:11em;
+  }
+  #findUs{
+    top:1.5em;
+    height:13.1em;
+  }
+  #mapWrap{
+    height:15em;
+  }
+  #mapTxtWrap{
+    font-size: 1em;
+  }
+  #findUs a{
+    position: relative;
+    top:-15em;
+  }
+  #customerPics{
+    top: 1.8em;
+    height:12em;
+  }
+  #footer{
+    top:11.7em;
+  }
+  .navLink {
+    font-size: .95em;
+    top:.5em;
+    margin: 0 .4em 0 .4em;
+    width:fit-content;
+    height:fit-content;
+  }
+  #navLeft{
+    top:-.5em;
+    width: 15em;
+  }
+  #navRight{
+    top:-.5em;
+    width: 15em;
+    margin: 0 .5em 0 .5em;
+  }
+  #navLeft img{
+    height:2em;
+  }
+  #navRight img{
+    height:1.5em;
+  }
+  #phNum{
+    font-size: .9em;
+    top:-.5em;
+  }
+  #order {
+    height: 5rem;
+    width: 10rem;
+    font-size: .6em;
+    left:-3em;
+  }
+  #hero{
+    display: none;
+  }
+  #hero1000{
+    display: none;
+  }
+  #heroSmall{
+    display: none;
+  }
+  #heroSmallest{
+    display: flex;
+  }
+  #footer{
+    height:13em;
+  }
+}
+@media screen and (max-width:700px){
+  #cover img{
+    width: 8em;
+    height:6em;
+  }
+  #upperNavBar{
+    height:6em;
+  }
+  #navWrap{
+    height: 6em;
+  }
+  #info{
+    top:0em;
+  }
+  #infoTxtLeft{
+    font-size: .8em;
+  }
+  #address{
+    font-size: .8em;
+    top:0em;
+  }
+  #address p{
+    text-align: center;
+  }
+  #address h1{
+    font-size:2em;
+  }
+  #about{
+    top:0em;
+    height:23.5em;
+  }
+  #aboutTxtPc{
+    display: none;
+  }
+  #aboutTxtMobile{
+    display:block;
+    visibility: visible;
+    width:40%;
+    height:15em;
+    top:0em;
+  }
+
+  #about p{
+    font-size: .42em;
+    margin:0;
+    padding-top: 1.2em;
+    padding-bottom: 0em;
+    position: relative;
+    top:1em;
+  }
+  #about h1{
+    font-size: .9em;
+    top:1em;
+    position: relative;
+  }
+  #about img{
+    top:.1em;
+    height:18em;
+    width: 20em;
+  }
+  #review{
+    top:0em;
+    font-size: .45em;
+    display: none;
+  }
+  #reviewTxtWrap :nth-child(even){
+    height: 19em;
+  }
+  #reviewTxtWrap :nth-child(odd){
+    height: 23em;
+  }#reviewPic{
+    top:-1em;
+  }
+  .reviewTxt:hover{
+    transition: ease .3s;
+    background-color: bisque;
+    box-shadow: 0px 0px 5px 5px;
+    z-index: 3;
+    font-size: 1.4em;
+  }
+  #special{
+    border-top: 10px solid black;
+    height: 10em;
+    font-size: .85em;
+    top:0em;
+    height: 16em;
+  }
+  #special img{
+    width:8em;
+  }
+  #special a{
+    position: relative;
+    top:-3em;
+  }
+  #special p{
+    font-size: .9em;
+  }
+  #findUs a{
+    position: relative;
+    top:-2.9em;
+  }
+  #storefrontPics img{
+    width: 4em;
+    height: 12em;
+    margin-left: 0em;
+    margin-right: 0em;
+    display: none;
+  }
+  #mapTxtWrap{
+    font-size: .4em;
+  }
+  #findUs iframe{
+    width:12em;
+    height:12em;
+  }
+  #findUs{
+    top:1.5em;
+    height:13.1em;
+  }
+  #mapWrap{
+    height:15em;
+  }
+  #mapTxtWrap p{
+    font-size: 2em;
+  }
+  #findUs a{
+    position: relative;
+    top:-15em;
+  }
+  #customerPics{
+    top: 1.8em;
+    height:12em;
+  }
+  .navLink {
+    font-size: .85em;
+    top:.5em;
+    margin: 0 .4em 0 .4em;
+    width:fit-content;
+    height:fit-content;
+  }
+  #navLeft{
+    top:-.5em;
+    width: 15em;
+  }
+  #navRight{
+    top:-.5em;
+    width: 15em;
+    margin: 0 .5em 0 .5em;
+  }
+  #navLeft img{
+    height:2em;
+  }
+  #navRight img{
+    height:1.5em;
+  }
+  #phNum{
+    font-size: 1em;
+    top:-.5em;
   }
   #order {
     height: 5rem;
@@ -1391,11 +1838,207 @@ div.sticky {
     font-size: .6em;
     left:-2em;
   }
-  #hero{
-    max-height: 20em;
-    top:-22em;
-  }
   #footer{
-    height:45em;
+    height:13em;
+  }
+  #heroSmallest{
+    display: flex;
+  }
+
+}
+
+
+@media screen and (max-width:650px){
+  #logoWrap{
+    top:1em;
+  }
+  #logoWrap img{
+    width: 5em;
+    height:3.5em;
+  }
+  
+  #info{
+    top:0em;
+  }
+  #infoTxtLeft{
+    font-size: .9em;
+  }
+  #address{
+    font-size: .75em;
+    top:0em;
+  }
+  #address p{
+    text-align: center;
+  }
+  #address h1{
+    font-size:2em;
+    left:2em;
+  }
+  #about{
+    top:0em;
+    height:23.5em;
+  }
+  #aboutTxtPc{
+    display: none;
+  }
+  #aboutTxtMobile{
+    display:block;
+    visibility: visible;
+    width:40%;
+    height:15em;
+    top:0em;
+  }
+  #about p{
+    font-size: .4em;
+    margin:0;
+    padding-top: 1.2em;
+    padding-bottom: 0em;
+    position: relative;
+    top:3em;
+  }
+  #about h1{
+    font-size: .9em;
+    top:2em;
+    position: relative;
+  }
+  #about img{
+    top:.1em;
+    height:18em;
+    width: 20em;
+  }
+  #customerPics{
+    top: 1.8em;
+    height:12em;
+    display: none;
+  }
+  .navLink {
+    font-size: .8em;
+    top:.5em;
+    margin: 0 .2em 0 .2em;
+    width:fit-content;
+    height:fit-content;
+  }
+  #special p{
+    font-size: .65em;
+  }
+  #phNum{
+    font-size: .7em;
+    top:-.5em;
+  }
+  #order {
+    height: 5rem;
+    width: 9rem;
+    font-size: .6em;
+    left:0em;
+  }
+} 
+@media screen and (max-width:600px){
+#logoWrap{
+  width: 4em;
+  height: 4em;
+  top:0;
+}
+#logoWrap img{
+  width:4em;
+  height: 3em;
+}
+#phNum{
+  font-size:.55em;
+}
+.navLink{
+  margin:0;
+  font-size: .75em;
+}
+#navLeft{
+  width:18em;
+  margin-right:0;
+  margin-left:0;
+}
+#navLeft img{
+  width: 1.8em;
+  height: auto;
+  left:0;
+}
+#navRight{
+  width:21em;
+  margin-left:0;
+  margin-right: 0;
+}
+#navRight img{
+  width: 1.4em;
+  height: auto;
+}
+#order{
+  width: 13em;
+  font-size: .5em;
+  left:1.5em;
+}
+#infoTxtLeft{
+  left:1em;
+}
+#aboutTxtMobile p{
+  font-size:.37em;
+  top:0;
+}
+#aboutTxtMobile h1{
+  top:.5em;
+}
+#about img{
+  width:13em;
+  height: 13em;
+}
+#special{
+  font-size: .9em;
+  top:0em;
+}
+#findUs{
+  top: 1.5em;
+}
+#footer{
+  top:1.5em;
+}
+#hero1000{
+  display: none;
+}
+#heroSmall{
+  display: none;
+}
+#heroSmallest{
+  display: flex;
+}
+}
+@media screen and (max-width:450px){
+  #heroSmallest{
+    display: none;
+  }
+  #hero500{
+    display: block;
+    height:12em;
+}
+  #infoTxtLeft{
+  text-decoration: none;
+}
+  #order{
+    width:17em;
+    left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #order p{
+    position: relative;
+    top: .5em;
+  }
+  #special p{
+    font-size: .5em;
+  }
+  #address{
+    width: 13em;
+  }
+  .navLink{
+    font-size: .5em;
+  }
+  #phNum{
+    font-size: .45em;
   }
 }
