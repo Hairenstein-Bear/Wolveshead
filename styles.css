@@ -267,39 +267,15 @@ div.sticky {
   background-color: #A3B7C4ff;
   position: relative;
   top:11.5em;
-
   height: 30rem;
   width: 100%;
   font-family: "hammersmithOne";
 }
-#about img{
-  width:30em;
-  height:27em;
-  position: relative;
-  top: .75em;
-  z-index: 1;
-}
-
 #aboutTxtPc{
   display: block;
   font-size: 1.4em;
   position: relative;
-  top: 1em;
   width:50em;
-}
-#aboutTxtMobile{
-  display: none;
-  /* visibility: hidden; */
-  font-size: 1.6em;
-  position: relative;
-  top: -.5em;
-  /* float:right; */
-  width:50em;
-  /* left: -7em; */
-}
-#aboutTxt p{
-  display: inline;
-  left:-100px;
 }
 #review{
   display: block;
@@ -507,15 +483,6 @@ div.sticky {
 
 
 @media screen and (max-width:2200px){
-  /* #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  } */
   #hero{
     display: none;
   }
@@ -526,18 +493,6 @@ div.sticky {
   #order{
     left:-6em;
   }
-  #aboutTxt{
-    width:50%;
-    height:fit-content;
-  }
-  #about p{
-    font-size: .9em;
-    margin:0;
-  }
-  #about h2{
-    font-size: .8em;
-  } 
-
   #special{
     font-size: 1.5em;
     top:9em;
@@ -589,83 +544,19 @@ div.sticky {
     height:fit-content;
   }
 
-
 }
 
 @media screen and (max-width:1900px){
-  /* #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  } */
-  #aboutTxt{
-    width:50%;
-    height:fit-content;
-  }
-  #about p{
-    font-size: .8em;
-    margin:0;
-  }
-  #about h1{
-    font-size: 1.4em;
-  }
-  #special a{
-    position: relative;
-    top:-3em;
-  }
   #specialWrap p{
     font-size: 1.1em;
   }
-  #special img{
-    height:15em;
-  }
-  #findUs a{
-    position: relative;
-    top:-3em;
-  }
-  #storefrontPics img{
-    width: 13em;
-    height: 20em;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  #findUs iframe{
-    width:100%;
-  }
-  #findUs{
-    top:11.4em;
-  }
-  #findUs a{
-    position: relative;
-    top:-3em;
-  }
-  #customerPics{
-    top:11.4em;
-  }
   #footer{
     top:11em;
-  }
-  .navLink {
-    font-size: 1.5em;
-    height:fit-content;
   }
 
 }
 
 @media screen and (max-width:1700px){
-  /* #menu{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-  }
-  #menu img{
-    width: 100%;
-    height: 49.5%;
-  } */
   #cover{
     width: 10.5em;
     background-color: #831B14ff;
@@ -679,32 +570,8 @@ div.sticky {
     font-size: 1.2em;
     top:-.75em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-  }
   #order{
     left:-7em;
-  }
-  #about p{
-    font-size: .7em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-  }
-  #about h1{
-    font-size: 1.2em;
-    top:1em;
-  }
-  #about img{
-    top:.5em;
-    height:27em;
-    width: 30em;
   }
   #special{
     font-size: 1.2em;
@@ -773,30 +640,7 @@ div.sticky {
   #about{
     top:0em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-  }
-  #about p{
-    font-size: .7em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-  }
-  #about h1{
-    font-size: 1.3em;
-    top:1em;
-  }
-  #about img{
-    top:.1em;
-    height:27em;
-    width: 30em;
-  }
+
   #review{
     top:0em;
     font-size: .8em;
@@ -852,34 +696,6 @@ div.sticky {
   }
   #address{
     font-size: .8em;
-  }
-  #about{
-    top:0em;
-  }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-  }
-
-  #about p{
-    font-size: .7em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-  }
-  #about h1{
-    font-size: 1.2em;
-    top:1em;
-  }
-  #about img{
-    top:.1em;
-    height:26em;
-    width: 30em;
   }
   #review{
     top:0em;
@@ -963,34 +779,6 @@ div.sticky {
   }
   #about{
     top:0em;
-  }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-  }
-
-  #about p{
-    font-size: .65em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
-  }
-  #about h1{
-    font-size: 1em;
-    top:1em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:25em;
-    width: 28em;
   }
   #review{
     top:0em;
@@ -1082,35 +870,13 @@ div.sticky {
     top:0em;
     height:23.5em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:50%;
-    height:15em;
-    top:1em;
-  }
-
   #about p{
-    font-size: .55em;
-    margin:0;
-    padding-top: 1em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
+    font-size: .85em;
   }
   #about h1{
-    font-size: .9em;
-    top:1em;
-    position: relative;
+    font-size: 1.3em;
   }
-  #about img{
-    top:.1em;
-    height:20em;
-    width: 25em;
-  }
+
   #review{
     top:0em;
     font-size: .8em;
@@ -1211,42 +977,22 @@ div.sticky {
     top:0em;
     height:22.5em;
   }
-  #aboutTxtPc{
+ 
+  #hero{
     display: none;
   }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:40%;
-    height:15em;
-    top:1em;
+  #hero1000{
+    display: flex;
+    top:0;
+    height:35em;
   }
-#hero{
-  display: none;
-}
-#hero1000{
-  display: flex;
-  top:0;
-  height:35em;
-}
   #about p{
-    font-size: .48em;
-    margin:0;
-    padding-top: 1.2em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
+    font-size: .75em;
   }
   #about h1{
     font-size: .9em;
-    top:1em;
-    position: relative;
   }
-  #about img{
-    top:.1em;
-    height:18em;
-    width: 20em;
-  }
+
   #review{
     top:0em;
     font-size: .45em;
@@ -1339,9 +1085,7 @@ div.sticky {
     font-size: 1em;
     left:-2em;
   }
-  #hero{
-    /* max-height: 20em; */
-  }
+
   #footer{
     top:11.7em;
     height:13em;
@@ -1373,34 +1117,8 @@ div.sticky {
     top:0em;
     height:22.5em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:40%;
-    height:15em;
-    top:1em;
-  }
-
   #about p{
-    font-size: .44em;
-    margin:0;
-    padding-top: 1.2em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
-  }
-  #about h1{
-    font-size: .9em;
-    top:1em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:18em;
-    width: 20em;
+    font-size: .7em;
   }
   #review{
     top:0em;
@@ -1490,7 +1208,6 @@ div.sticky {
   #phNum{
     font-size: .8em;
     top:-.5em;
-
   }
   #order {
     height: 5rem;
@@ -1530,34 +1247,11 @@ div.sticky {
     top:0em;
     height:22.5em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:40%;
-    height:15em;
-    top:1em;
-  }
-
   #about p{
-    font-size: .44em;
-    margin:0;
-    padding-top: 1.2em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
+    font-size: .65em;
   }
   #about h1{
-    font-size: .9em;
-    top:1em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:18em;
-    width: 20em;
+    font-size: .8em;
   }
   #review{
     top:0em;
@@ -1704,34 +1398,11 @@ div.sticky {
     top:0em;
     height:23.5em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:40%;
-    height:15em;
-    top:0em;
-  }
-
   #about p{
-    font-size: .42em;
-    margin:0;
-    padding-top: 1.2em;
-    padding-bottom: 0em;
-    position: relative;
-    top:1em;
+    font-size: .6em;
   }
   #about h1{
-    font-size: .9em;
-    top:1em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:18em;
-    width: 20em;
+    font-size: .75em;
   }
   #review{
     top:0em;
@@ -1878,34 +1549,6 @@ div.sticky {
     top:0em;
     height:23.5em;
   }
-  #aboutTxtPc{
-    display: none;
-  }
-  #aboutTxtMobile{
-    display:block;
-    visibility: visible;
-    width:40%;
-    height:15em;
-    top:0em;
-  }
-  #about p{
-    font-size: .4em;
-    margin:0;
-    padding-top: 1.2em;
-    padding-bottom: 0em;
-    position: relative;
-    top:3em;
-  }
-  #about h1{
-    font-size: .9em;
-    top:2em;
-    position: relative;
-  }
-  #about img{
-    top:.1em;
-    height:18em;
-    width: 20em;
-  }
   #customerPics{
     top: 1.8em;
     height:12em;
@@ -1975,17 +1618,6 @@ div.sticky {
 }
 #infoTxtLeft{
   left:1em;
-}
-#aboutTxtMobile p{
-  font-size:.37em;
-  top:0;
-}
-#aboutTxtMobile h1{
-  top:.5em;
-}
-#about img{
-  width:13em;
-  height: 13em;
 }
 #special{
   font-size: .9em;
