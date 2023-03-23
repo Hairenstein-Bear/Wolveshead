@@ -29,7 +29,7 @@ $email_body = "You have received a new message from $name.\n".
     "Their phone number is: $telephone \n".
     
 $headers = "From: $email_from \r\n";
-$to = "paul.hair917@gmail.com";//<== update the email address
+$to = "paul.hair917@gmail.com", "triggr917@hotmail.com";//<== update the email address
 // $headers .= "Reply-To: $visitor_email \r\n";
 
 
@@ -37,7 +37,34 @@ $to = "paul.hair917@gmail.com";//<== update the email address
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
 header('Location: thank-you.html');
+$curlx = curl_init();
 
+curl_setopt($curlx, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+curl_setopt($curlx, CURLOPT_HEADER, 0);
+curl_setopt($curlx, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($curlx, CURLOPT_POST, 1);
+
+$post_data = 
+[
+    'secret' => '6Le5vTQkAAAAAPXAfqFKYS2wore6a4plLXDBR-aU', //<--- your reCaptcha secret key
+    'response' => $_POST['g-recaptcha-response']
+];
+
+curl_setopt($curlx, CURLOPT_POSTFIELDS, $post_data);
+
+$resp = json_decode(curl_exec($curlx));
+
+curl_close($curlx);
+
+if ($resp->success) 
+{
+    //success!
+} else 
+{
+    // failed
+    echo "error";
+    exit;
+}
 
 // Function to validate against any email injection attempts
 function IsInjected($str)

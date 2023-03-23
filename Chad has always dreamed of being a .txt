@@ -1,0 +1,19 @@
+Chad has always dreamed of being a grocer, he recently found out about a competition a local grocery store chain (Finn-Pixie) known for its mischeivous CEO Finn is having where the winning team gets their own grocery store.  Since he has no friends Chad needs the parties help to complete the challenge and make his dreams come true.  So far no team has completed it and furthermore those who fail the tasks fall victim to whatever pesky prank the pixie CEO plans to play on the contestant (usually a life of indentrued servitude to the Finn Pixie corporation). The party has one day to complete the tasks and have Chad report to the Finn in the flagship branch of Finn Pixie.
+Task 1 make change for the customer determine price of goods and return the correct change if not the statue comes to life and attacks the party.  Two things open the door killing the balgura or giving the statue the correct change.
+Grocery receipt:
+
+
+customer paid 1 platinum
+51 silver 3 copper
+correct change:
+48 silver 7 copper
+or 4 gold 8 silver 7 copper
+
+
+Task 2: Bring the groceries to the customers vehicle:
+
+Each character can carry one bag without being overencumbered or they can carry two bags at half movement speed. Any large creature can carry two bags at full movement speed although the customer refuses to help.
+
+each round at initiative 20 the bags of food take 5 damage as the heat from the surrounding air begins to cause the food to turn.   
+
+Task 3: Convince Chad's Father Yodre Krogre the ogre yoga instructor a.k.a the Yogre, to let Chad become a Grogre.  Chad's Father is quick to anger and will fight the party if he thinks he is losing the argument unless convinced otherwise.  Use Oni stats for Yodre
